@@ -1,0 +1,16 @@
+﻿<Page x:Class="App9.PaginaInicial"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:App9"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PaginaInicial" Loaded="Page_Loaded">
+
+    <Grid Background="White">
+        <Button Content="Segunda Página" HorizontalAlignment="Left" Margin="670,0,0,0" VerticalAlignment="Top" Height="31" Width="130" Click="Button_Click" FontSize="18"/>
+        <DataGrid x:Name="datagridDisci" Margin="0,0,239,0"/>
+
+    </Grid>
+</Page>
