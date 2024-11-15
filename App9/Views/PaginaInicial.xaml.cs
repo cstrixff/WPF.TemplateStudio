@@ -12,7 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using MahApps.Metro.Controls;
+using MahApps.Metro.Controls.Dialogs;
 namespace App9.Views
 {
     /// <summary>
@@ -27,6 +28,11 @@ namespace App9.Views
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
+
+
+
+
 
             Disciplina oselecionado = ((Disciplina)datagridDisci.SelectedItem);
             if (oselecionado != null)
@@ -36,9 +42,21 @@ namespace App9.Views
                 this.NavigationService.Navigate(nova);
             }
             else
-            {   
-                MessageBox.Show("Selecione uma disciplina");
+            {
+                Mensagem( "Atenção" , "Selecione uma disciplina");
             }
+        }
+
+
+
+
+
+
+
+        private static void Mensagem(string titulo , string texto)
+        {
+            MetroWindow metro = (MetroWindow)Application.Current.MainWindow;
+            metro.ShowMessageAsync(titulo, texto);
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
