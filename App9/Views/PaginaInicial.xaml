@@ -10,8 +10,16 @@
       Style="{DynamicResource MahApps.Styles.Page}">
 
     <Grid Background="White">
-        <Button Content="Segunda Página" HorizontalAlignment="Left" Margin="670,0,0,0" VerticalAlignment="Top" Height="31" Width="130" Click="Button_Click" FontSize="18"/>
-        <DataGrid x:Name="datagridDisci" Margin="0,0,239,0"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="407*"/>
+            <RowDefinition Height="43*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="319*"/>
+            <ColumnDefinition Width="81*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Ver Disciplina"   Margin="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Button_Click" Grid.Column="1" Grid.Row="1" Style="{StaticResource MahApps.Styles.Button.Square.Accent}"/>
+        <DataGrid x:Name="datagridDisci" Margin="0,0,0,2" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Page>

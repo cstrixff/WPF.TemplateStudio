@@ -9,16 +9,6 @@
       Title="SegundaPagina" Loaded="Page_Loaded">
 
     <Grid Background="White">
-        <Button Content="Página Inicial" HorizontalAlignment="Left" Margin="670,-3,0,0" VerticalAlignment="Top" Width="130" Height="31" RenderTransformOrigin="0.5,0.5" FontSize="18" Click="Button_Click_1">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
-        </Button>
         <TextBox x:Name="txtboxNomeSegunda" HorizontalAlignment="Left" Margin="10,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtboxProfessorSegunda" HorizontalAlignment="Left" Margin="10,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtboxHorasSegunda" HorizontalAlignment="Left" Margin="10,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>

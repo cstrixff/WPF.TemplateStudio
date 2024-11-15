@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MahApps.Metro.Controls;
+using MahApps.Metro.Controls.Dialogs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -59,7 +61,9 @@ namespace App9.Views
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MetroWindow metro = (MetroWindow)Application.Current.MainWindow;
+                metro.ShowMessageAsync("erro", ex.Message);
+                
             }
             
         }
