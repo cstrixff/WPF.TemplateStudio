@@ -14,9 +14,10 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <TextBlock
+            x:Name="tbTitulo"
             Style="{StaticResource PageTitleStyle}"
             Margin="{StaticResource MediumLeftMargin}"
-            Text="{x:Static properties:Resources.BlankPageTitle}" />
+            Text="Disciplinas" />
         <Grid
             Grid.Row="1"
             Margin="{StaticResource MediumLeftRightMargin}"

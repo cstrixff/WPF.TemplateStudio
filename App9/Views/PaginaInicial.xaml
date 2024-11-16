@@ -9,7 +9,7 @@
       Title="PaginaInicial" Loaded="Page_Loaded"
       Style="{DynamicResource MahApps.Styles.Page}">
 
-    <Grid Background="White">
+    <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="407*"/>
             <RowDefinition Height="43*"/>

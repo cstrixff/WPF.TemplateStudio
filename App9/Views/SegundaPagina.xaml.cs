@@ -28,6 +28,7 @@ namespace App9.Views
         {
             InitializeComponent();
             minhaDisciplina = aDisciplina;
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -46,6 +47,7 @@ namespace App9.Views
         {
             datagridAlunosDisponiveis.ItemsSource = Dados.AlunosNaoNaDisciplina(minhaDisciplina.Id); 
             datagridAlunosDisciplina.ItemsSource = Dados.AlunosDaDisciplina(minhaDisciplina.Id);
+            labelNAlunos.Content = datagridAlunosDisciplina.Items.Count + " alunos";
         }  
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -53,9 +55,9 @@ namespace App9.Views
 
 
             try { 
-                txtboxNomeSegunda.Text = minhaDisciplina.Nome;
-                txtboxProfessorSegunda.Text = minhaDisciplina.Professor;
-                txtboxHorasSegunda.Text = minhaDisciplina.Horas.ToString();
+                txtboxNomeSegunda.Content = minhaDisciplina.Nome;
+                //txtboxProfessorSegunda.Content = minhaDisciplina.Professor;
+                //txtboxHorasSegunda.Content = minhaDisciplina.Horas.ToString();
 
             AtualizarDatagrids();
             }
